@@ -1,0 +1,53 @@
+本项目基于 React Native 0.68.0-rc.4 版本开发，并通过命令或配置的方式开启了新架构。
+
+启动本项目之前，请先按照[官方文档搭建环境](https://reactnative.cn/docs/environment-setup)。
+
+**目前新架构还是预览版，仅供学习使用，请勿用于线上项目。**
+
+# 启动方法
+
+```
+$ git clone ReactNativeClassroom
+$ cd ReactNativeClassroom
+$ yarn install
+```
+
+## 运行 iOS
+
+需要 MacOS 和 Xcode
+
+如果你是 Inter 芯片的 Apple 电脑，安装如下方式安装
+
+```
+# 安装 iOS 依赖
+$ cd ios && USE_HERMES=1 RCT_NEW_ARCH_ENABLE=1 pod install && cd ../
+
+# 在模拟器安装 App
+$ yarn ios
+```
+
+
+如果你是 M1 芯片的 Apple 电脑，在 pod install 这一步使用如下命令进行安装
+
+```
+# this installs the ffi package to load dynamically-linked libraries.
+$ sudo arch -x86_64 gem install ffi
+
+# this run pod install with the right architecture
+$ cd ios && USE_HERMES=1 RCT_NEW_ARCH_ENABLE=1 arch -x86_64 pod install && cd ../
+
+# 在模拟器安装 App
+$ yarn ios
+```
+
+
+## 运行 Android
+
+```
+yarn install-android-hermes
+yarn android
+```
+
+Open the ReactNativeClassroom app in your emulator. If you want to use a physical device, run adb devices, then adb -s <device name> reverse tcp:8081 tcp:8081. See Running on Device for additional instructions on using a physical device.
+
+
