@@ -26,16 +26,6 @@ $ cd ios && USE_HERMES=1 RCT_NEW_ARCH_ENABLE=1 pod install && cd ../
 $ yarn ios
 ```
 
-
-如果你是 M1 芯片的 Apple 电脑，在 pod install 这一步使用如下命令进行安装
-
-```
-# this installs the ffi package to load dynamically-linked libraries.
-$ sudo arch -x86_64 gem install ffi
-
-# this run pod install with the right architecture
-$ cd ios && USE_HERMES=1 RCT_NEW_ARCH_ENABLE=1 arch -x86_64 pod install && cd ../
-
 # 在模拟器安装 App
 $ yarn ios
 ```

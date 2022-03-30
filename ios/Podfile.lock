@@ -282,6 +282,12 @@ PODS:
   - React-jsinspector (0.68.0-rc.4)
   - React-logger (0.68.0-rc.4):
     - glog
+  - react-native-flipper (0.131.1):
+    - React-Core
+  - react-native-pager-view (5.4.15):
+    - React-Core
+  - react-native-safe-area-context (3.4.1):
+    - React-Core
   - React-perflogger (0.68.0-rc.4)
   - React-RCTActionSheet (0.68.0-rc.4):
     - React-Core/RCTActionSheetHeaders (= 0.68.0-rc.4)
@@ -347,6 +353,45 @@ PODS:
     - React-jsi (= 0.68.0-rc.4)
     - React-logger (= 0.68.0-rc.4)
     - React-perflogger (= 0.68.0-rc.4)
+  - RNCAsyncStorage (1.17.1):
+    - React-Core
+  - RNCMaskedView (0.2.6):
+    - React-Core
+  - RNGestureHandler (2.3.2):
+    - React-Core
+  - RNReanimated (2.5.0):
+    - DoubleConversion
+    - FBLazyVector
+    - FBReactNativeSpec
+    - glog
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React
+    - React-callinvoker
+    - React-Core
+    - React-Core/DevSupport
+    - React-Core/RCTWebSocket
+    - React-CoreModules
+    - React-cxxreact
+    - React-jsi
+    - React-jsiexecutor
+    - React-jsinspector
+    - React-RCTActionSheet
+    - React-RCTAnimation
+    - React-RCTBlob
+    - React-RCTImage
+    - React-RCTLinking
+    - React-RCTNetwork
+    - React-RCTSettings
+    - React-RCTText
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNScreens (3.13.1):
+    - React-Core
+    - React-RCTImage
+  - RNVectorIcons (9.1.0):
+    - React-Core
   - SocketRocket (0.6.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -395,6 +440,9 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-flipper (from `../node_modules/react-native-flipper`)
+  - react-native-pager-view (from `../node_modules/react-native-pager-view`)
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -407,6 +455,12 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
+  - "RNCMaskedView (from `../node_modules/@react-native-masked-view/masked-view`)"
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
+  - RNScreens (from `../node_modules/react-native-screens`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -464,6 +518,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-flipper:
+    :path: "../node_modules/react-native-flipper"
+  react-native-pager-view:
+    :path: "../node_modules/react-native-pager-view"
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -488,6 +548,18 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-async-storage/async-storage"
+  RNCMaskedView:
+    :path: "../node_modules/@react-native-masked-view/masked-view"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
+  RNVectorIcons:
+    :path: "../node_modules/react-native-vector-icons"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -523,6 +595,9 @@ SPEC CHECKSUMS:
   React-jsiexecutor: ffd8ee169fba7a055e2017f6be4f86a7447f14fb
   React-jsinspector: 83ab4f136376e39e8b324cef45977e1ac8100265
   React-logger: b2c25c4769127bebfaf7259b5434318665716982
+  react-native-flipper: 8d0ada062fbc2c7460cc0d343aded6fc3f9c90dc
+  react-native-pager-view: b1914469643f40042e65d78cbf3d3dfebd6fb0d9
+  react-native-safe-area-context: 9e40fb181dac02619414ba1294d6c2a807056ab9
   React-perflogger: faeb84f20075000ff7ddc597c5a3279a1e02f2e1
   React-RCTActionSheet: c6ba54f797b15fa1d920963171c425fca8b3868b
   React-RCTAnimation: dc00cf33f6798059f769c4546d04cdf01480baef
@@ -535,6 +610,12 @@ SPEC CHECKSUMS:
   React-RCTVibration: 42dd3d0defe49baf02cc30bd216de08233053c03
   React-runtimeexecutor: 6f69253af03039d3ab7c226421f0536da92b0d7a
   ReactCommon: 9044455ada87b8063b3dd8d9ef113c82b1d333a4
+  RNCAsyncStorage: 4e17811bcadfdc068cd3e2bb896f0fea0198710d
+  RNCMaskedView: c298b644a10c0c142055b3ae24d83879ecb13ccd
+  RNGestureHandler: 6e757e487a4834e7280e98e9bac66d2d9c575e9c
+  RNReanimated: 61f7efddd08550ffa5dee90021a157cd6e7c82fb
+  RNScreens: 40a2cb40a02a609938137a1e0acfbf8fc9eebf19
+  RNVectorIcons: 7923e585eaeb139b9f4531d25a125a1500162a0b
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: 13fdbd4e5a493556d2875b0be6f1ef62b6fd6c3e
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
