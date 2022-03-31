@@ -1,4 +1,4 @@
-本项目基于 React Native 0.68.0-rc.4 版本开发，并通过命令或配置的方式开启了新架构。
+本项目基于 React Native 0.68.0 版本开发，并通过命令或配置的方式开启了新架构。
 
 启动本项目之前，请先按照[官方文档搭建环境](https://reactnative.cn/docs/environment-setup)。
 
@@ -25,11 +25,6 @@ $ cd ios && USE_HERMES=1 RCT_NEW_ARCH_ENABLE=1 pod install && cd ../
 # 在模拟器安装 App
 $ yarn ios
 ```
-
-# 在模拟器安装 App
-$ yarn ios
-```
-
 
 ## 运行 Android
 
