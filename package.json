@@ -37,7 +37,7 @@
     "parse-link-header": "^1.0.0",
     "querystring": "^0.2.1",
     "react": "17.0.2",
-    "react-native": "0.68.0-rc.4",
+    "react-native": "0.68.0",
     "react-native-gesture-handler": "^2.3.2",
     "react-native-pager-view": "^5.4.9",
     "react-native-paper": "^4.11.2",
