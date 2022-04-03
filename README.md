@@ -7,16 +7,14 @@
 # 启动方法
 
 ```
-$ git clone ReactNativeClassroom
-$ cd ReactNativeClassroom
+$ git clone https://github.com/jiangleo/react-native-classroom.git
+$ cd react-native-classroom
 $ yarn install
 ```
 
 ## 运行 iOS
 
 需要 MacOS 和 Xcode
-
-如果你是 Inter 芯片的 Apple 电脑，安装如下方式安装
 
 ```
 # 安装 iOS 依赖
