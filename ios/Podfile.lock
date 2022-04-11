@@ -286,8 +286,12 @@ PODS:
     - React-Core
   - react-native-pager-view (5.4.15):
     - React-Core
-  - react-native-safe-area-context (3.4.1):
-    - React-Core
+  - react-native-safe-area-context (4.2.4):
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React
+    - ReactCommon/turbomodule/core
   - React-perflogger (0.68.0)
   - React-RCTActionSheet (0.68.0):
     - React-Core/RCTActionSheetHeaders (= 0.68.0)
@@ -597,7 +601,7 @@ SPEC CHECKSUMS:
   React-logger: 8474fefa09d05f573a13c044cb0dfd751d4e52e3
   react-native-flipper: 8d0ada062fbc2c7460cc0d343aded6fc3f9c90dc
   react-native-pager-view: b1914469643f40042e65d78cbf3d3dfebd6fb0d9
-  react-native-safe-area-context: 9e40fb181dac02619414ba1294d6c2a807056ab9
+  react-native-safe-area-context: f98b0b16d1546d208fc293b4661e3f81a895afd9
   React-perflogger: 15cb741d6c2379f4d3fc8f9e4d4e1110ef3020cb
   React-RCTActionSheet: ea9099db0597bd769430db1e2d011fd5fdb7fc5e
   React-RCTAnimation: 252df4749866f2654f37612f839522cac91c1165
