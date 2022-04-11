@@ -61,4 +61,4 @@ buck-out/
 /vendor/bundle/
 
 # local
-/loacl/
+local/
