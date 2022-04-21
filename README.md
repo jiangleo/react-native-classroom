@@ -15,7 +15,6 @@ $ yarn install
 ## 运行 iOS
 
 需要 MacOS 和 Xcode
-
 ```
 # 安装 iOS 依赖 
 $ cd ios && RCT_NEW_ARCH_ENABLED=1 pod install && cd ../
