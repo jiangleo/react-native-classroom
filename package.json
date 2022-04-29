@@ -41,6 +41,7 @@
     "querystring": "^0.2.1",
     "react": "17.0.2",
     "react-native": "0.68.1",
+    "react-native-code-push": "^7.0.4",
     "react-native-device-info": "^8.7.0",
     "react-native-gesture-handler": "^2.3.2",
     "react-native-mmkv": "^2.3.1",
