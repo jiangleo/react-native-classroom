@@ -1,0 +1,30 @@
+{
+  "name": "react-native-head-tab-view",
+  "version": "4.0.0-rc.13",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yu zou <zouyu123007@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyslife/react-native-head-tab-view.git"
+  },
+  "homepage": "https://github.com/zyslife/react-native-head-tab-view#readme",
+  "license": "ISC",
+  "keywords": [
+    "react-native-component",
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "tab",
+    "swipe",
+    "scrollable",
+    "tabview",
+    "head",
+    "stick",
+    "collapsible-header"
+  ],
+  "description": "Tab view component for React Native"
+}
