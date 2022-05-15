@@ -5,7 +5,10 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start": "mcs-scripts start -p 8081",
+    "build:dllJson": "mcs-scripts build -t dllJson -od public/dll",
+    "build:dll": "mcs-scripts build -t dll -od public/dll",
+    "build": "mcs-scripts build -t busine -e index.js",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
@@ -74,6 +77,7 @@
     "babel-jest": "^26.6.3",
     "eslint": "^7.14.0",
     "jest": "^26.6.3",
+    "metro-code-split": "^0.1.6",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-native-flipper": "^0.131.1",
     "react-test-renderer": "17.0.2",
