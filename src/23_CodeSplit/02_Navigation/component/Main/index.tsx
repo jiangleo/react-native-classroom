@@ -1,11 +1,11 @@
 import React, { FC } from 'react'
 import { StyleSheet, ScrollView, View, Button } from 'react-native'
-import type { StackNavigationProp } from '@react-navigation/stack'
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import type { RouteProp } from '@react-navigation/native'
 import { Views, RootStackParamList } from '../../types'
 
 type MainProps = {
-  navigation: StackNavigationProp<RootStackParamList, Views.Main>
+  navigation: NativeStackNavigationProp<RootStackParamList, Views.Main>
   route: RouteProp<RootStackParamList, Views.Main>
 }
 

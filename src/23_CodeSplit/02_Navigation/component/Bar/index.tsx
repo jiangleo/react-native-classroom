@@ -1,11 +1,11 @@
 import React, { FC } from 'react'
 import { StyleSheet, SafeAreaView, View, Text } from 'react-native'
-import type { StackNavigationProp } from '@react-navigation/stack'
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import type { RouteProp } from '@react-navigation/native'
 import { Views, RootStackParamList } from '../../types'
 
 type BarProps = {
-  navigation: StackNavigationProp<RootStackParamList, Views.Bar>
+  navigation: NativeStackNavigationProp<RootStackParamList, Views.Bar>
   route: RouteProp<RootStackParamList, Views.Bar>
 }
 

@@ -13,10 +13,14 @@ const mcs = new Mcs({
     publicPath: 'https://a.cdn.com/a-rn-project',
   },
   dll: {
-    entry: ['react-native', 'react'], // which three - party library into dll
+    // entry: ['react-native', 'react'], // which three - party library into dll
+    entry: [], // CodePush 热修复 + Dynamic Import 热更新
     referenceDir: './public/dll', // the JSON address to reference for the build DLL file, also the npm run build:dllJson output directory
   },
-  dynamicImports: {}, // DynamicImports can also be set to false to disable this feature if it is not required
+  dynamicImports: {
+    minSize: 0,
+    asyncFlag: 'async'
+  }, // DynamicImports can also be set to false to disable this feature if it is not required
 })
 
 const busineConfig = {
