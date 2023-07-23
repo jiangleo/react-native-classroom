@@ -16,21 +16,13 @@ apply plugin: 'com.facebook.react'
 
 android {
   compileSdkVersion safeExtGet('compileSdkVersion', 33)
+  namespace "com.rtncenteredtext"
+
   defaultConfig {
     minSdkVersion safeExtGet('minSdkVersion', 21)
-    targetSdkVersion safeExtGet('targetSdkVersion', 31)
-    buildConfigField("boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString())
+    targetSdkVersion safeExtGet('targetSdkVersion', 33)
+    buildConfigField("boolean", "IS_NEW_ARCHITECTURE_ENABLED", "true")
   }
-  sourceSets {
-    main {
-      if (isNewArchitectureEnabled()) {
-        java.srcDirs += ['src/newarch']
-      } else {
-        java.srcDirs += ['src/oldarch']
-      }
-    }
-  }
-  namespace "com.rtncalculator"
 }
 
 repositories {
@@ -40,9 +32,4 @@ repositories {
 
 dependencies {
   implementation 'com.facebook.react:react-native'
-}
-
-// Add this function in case you don't have it already
-def isNewArchitectureEnabled() {
-  return project.hasProperty("newArchEnabled") && project.newArchEnabled == "true"
 }

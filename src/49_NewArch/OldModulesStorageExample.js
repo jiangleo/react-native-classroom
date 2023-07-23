@@ -30,20 +30,13 @@ const StorageTest = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={{borderColor: '#0ac', borderWidth: 1, padding: 5}}>
+      <Text>Old Modules: 自定义存储模块</Text>
       <Button title="Set Item" onPress={handleSetItem} />
       <Button title="Get Item" onPress={handleGetItem} />
       <Text>Stored Value: {storageValue}</Text>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default StorageTest;

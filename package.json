@@ -60,6 +60,7 @@
     "recyclerlistview": "^3.0.5",
     "redux": "^4.1.2",
     "rtn-calculator": "./RTNCalculator",
+    "rtn-centered-text": "./RTNCenteredText",
     "seedrandom": "^3.0.5",
     "url": "^0.11.0",
     "xtend": "^4.0.2"
