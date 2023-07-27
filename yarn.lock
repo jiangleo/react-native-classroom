@@ -8186,6 +8186,9 @@ rtn-calculator@./RTNCalculator:
 rtn-centered-text@./RTNCenteredText:
   version "0.0.1"
 
+rtn-custom-view@./RTNCustomView:
+  version "0.0.1"
+
 run-async@^2.2.0, run-async@^2.4.0:
   version "2.4.1"
   resolved "https://registry.npmjs.org/run-async/-/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"

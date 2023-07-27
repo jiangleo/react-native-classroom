@@ -8,25 +8,23 @@ const {StorageModule} = NativeModules;
 const StorageTest = () => {
   const [storageValue, setStorageValue] = useState(null);
 
-  const handleSetItem = () => {
-    StorageModule.setItem('testKey', 'Hello, World!')
-      .then(() => {
-        console.log('Value set successfully');
-      })
-      .catch(error => {
-        console.error(error);
-      });
+  const handleSetItem = async () => {
+    try {
+      await StorageModule.setItem('testKey', 'Hello, World!');
+      console.log('Value set successfully');
+    } catch (error) {
+      console.error(error);
+    }
   };
 
-  const handleGetItem = () => {
-    StorageModule.getItem('testKey')
-      .then(result => {
-        console.log('Received value: ', result);
-        setStorageValue(result);
-      })
-      .catch(error => {
-        console.error(error);
-      });
+  const handleGetItem = async () => {
+    try {
+      const result = await StorageModule.getItem('testKey');
+      console.log('Received value: ', result);
+      setStorageValue(result);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (

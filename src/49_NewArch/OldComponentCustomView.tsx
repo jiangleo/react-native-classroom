@@ -13,13 +13,13 @@ const CustomView = requireNativeComponent('CustomView');
 const App: () => JSX.Element = () => {
   return (
     <View style={{borderColor: '#0ac', borderWidth: 1, padding: 5}}>
-      <Text>New Component：自定义文字组件</Text>
+      <Text>Old Component：自定义视图组件</Text>
       <CustomView
         style={{
           width: 100,
           height: 100,
         }}
-        color="#FF0000"
+        color="red"
       />
     </View>
   );

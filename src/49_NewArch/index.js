@@ -3,15 +3,17 @@ import {SafeAreaView} from 'react-native';
 import NewModulesCalculatorExample from './NewModulesCalculatorExample';
 import OldModulesStorageExample from './OldModulesStorageExample';
 import NewComponentTextExample from './NewComponentTextExample';
-import OldComponentImageView from './OldComponentImageView';
+import OldComponentCustomView from './OldComponentCustomView';
+import NewComponentViewExample from './NewComponentViewExample';
 
 export default function App() {
   return (
     <SafeAreaView>
-      <NewModulesCalculatorExample />
+      {/* <NewModulesCalculatorExample />
       <OldModulesStorageExample />
-      <NewComponentTextExample />
-      <OldComponentImageView />
+      <NewComponentTextExample /> */}
+      <OldComponentCustomView />
+      <NewComponentViewExample />
     </SafeAreaView>
   );
 }

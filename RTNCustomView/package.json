@@ -1,0 +1,17 @@
+{
+    "name": "rtn-custom-view",
+    "version": "0.0.1",
+    "description": "Showcase a Fabric Native Component with a custom background view",
+    "react-native": "js/index",
+    "source": "js/index",
+    "devDependencies": {},
+    "peerDependencies": {
+      "react": "*",
+      "react-native": "*"
+    },
+    "codegenConfig": {
+      "name": "RTNCustomViewSpecs",
+      "type": "components",
+      "jsSrcsDir": "js"
+    }
+  }
